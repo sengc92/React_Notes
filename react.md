@@ -18,9 +18,9 @@
 1) Flexibility - react can use typescript, flow
 
 ## React.js
-1) react.js 核心庫
+1) react.js 核心庫  
 2) react-dom.js 提供操作DOM的擴展庫  
-3）babel.min.js 解釋JSX語法轉為純JS代碼的庫，jsx=javascript+html
+3）babel.min.js 解釋JSX語法轉為純JS代碼的庫，jsx=javascript+html  
    
 ## React安裝
 create-react-app 官方生成react項目，加載react,react-dom,react-script(繼承webpack腳手架)  
