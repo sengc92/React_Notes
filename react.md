@@ -12,6 +12,7 @@
 ### 使用super
 1) 子類constructor必須調用super才能使用this
 2) constructor中可以使用this.props
+3) 組件method預設為非綁定this狀態
 
 ## Angular vs React
 1) Flexibility - react can use typescript, flow
@@ -22,14 +23,11 @@
 3）babel.min.js 解釋JSX語法轉為純JS代碼的庫，jsx=javascript+html
    
 ## React安裝
-create-react-app 官方生成react項目，加載react,react-dom,react-script(繼承webpack腳手架)
-
-npm start 開启本地服務
-
-npm build 打包
-
-npm testjest 進行單原測試
-npm eject 把webpack打包出來，不可逆
+create-react-app 官方生成react項目，加載react,react-dom,react-script(繼承webpack腳手架)  
+npm start 開启本地服務  
+npm build 打包  
+npm testjest 進行單原測試  
+npm eject 把webpack打包出來，不可逆  
 
 ```javascript
 import React from "react"; //lib, string of libName
@@ -75,12 +73,12 @@ Clock.render = function(){
 2)没有生命周期的钩子 新版本有增加
 3)函数组件中没有this
 ```
-#类组件
+# 类组件
 类组件在渲染时会默认调用render方法  
 extends React.Component  
 with hooks and state
 
-#React 的数据源(props(外部传入，不可修改) ,state(内部自带，可修改))
+# React的数据源(props(外部传入，不可修改) ,state(内部自带，可修改))
 props 会把组件传入的属性or方法放在this上 ---- 取值时：this.props.name1  
 this.state 状态 ---- 取值时：this.state.name1
 
@@ -98,7 +96,7 @@ componentWillUnmount(){} 将要卸载,在此阶段中删掉所有的监听和卸
 在元素中绑定时加入bind(onClick = this.btnclick.bind(this)) 每次点击都产生一个新的函数  
 在constructor中设置一下，然后在元素中用(οnclick={this.btnclick}) 官网推荐
 
-#prop-types
+# prop-types
 React 内置了类型检测的功能，在组件中检测，可以赋值propTypes属性  
 
 格式校验  
