@@ -1,4 +1,4 @@
-#React
+# React
 1) Declarative (聲明式編碼)
 2) Component-Based (組件化編碼-複用,維護,重構) 函數/類
 3) Learn Once, Write Anywhere(支持客戶與服務器渲染)
