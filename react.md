@@ -60,7 +60,7 @@ commenting use {}
 
 #函数组件
 ```javascript
-组件传递的属性或方法(<组件名 title={“222”}>)会把传入的属性包成一个对象({title:“222”})传给这个组件函数props,在组件内取值时就是，{props.title}
+组件传递的属性或方法(<组件名 title={“222”}>)会把传入的属性包成一个对象({title:“222”})传给这个组件函数props,在组件内取值时就是，{this.props.title}
 ```
 函数组件会在内部添加一个render方法，把函数的返回结果作为render方法的返回结果
 ```javascript
